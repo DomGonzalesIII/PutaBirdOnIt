@@ -11,9 +11,14 @@ if (document.getElementById('3GTZU3RrSlHhcocahnuken') === null) {
   divID.value = '3GTZU3RrSlHhcocahnuken';
   newDiv.setAttributeNode(divID);
 
+  // determining y placement of div
+  // add half of the veiwport height to the current scroll y (y at top of veiwport)
+  // then subtract half height of div to properly center
+  const topValue = window.scrollY + (window.innerHeight / 2) - 60;
+
   // style new div
   const divStyles = document.createAttribute('style');
-  divStyles.value = 'height: 120px; left: 50%; margin: 0 auto; margin-left: -50px; position: absolute; text-align: center; top: 250px; width: 100px; z-index: 2147483647;';
+  divStyles.value = `height: 120px; left: 50%; margin: 0 auto; margin-left: -50px; position: absolute; text-align: center; top: ${topValue}px; width: 100px; z-index: 2147483647;`;
   newDiv.setAttributeNode(divStyles);
 
   // add div to end of body
