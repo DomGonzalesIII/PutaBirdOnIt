@@ -13,11 +13,11 @@ if (document.getElementById('3GTZU3RrSlHhcocahnuken') === null) {
 
   // style new div
   const divStyles = document.createAttribute('style');
-  divStyles.value = 'background-color: #333; height: 120px; text-align: center; width: 100vw;';
+  divStyles.value = 'height: 120px; left: 50%; margin: 0 auto; margin-left: -50px; position: absolute; text-align: center; top: 250px; width: 100px; z-index: 2147483647;';
   newDiv.setAttributeNode(divStyles);
 
-  // add div to beginning of body
-  document.body.childNodes[0].before(newDiv);
+  // add div to end of body
+  document.body.appendChild(newDiv);
 
   // create new image
   const bird = document.createElement('img');
@@ -33,7 +33,7 @@ if (document.getElementById('3GTZU3RrSlHhcocahnuken') === null) {
   bird.setAttributeNode(birdStyles);
 
   // add bird to new div at top of body
-  document.body.childNodes[0].appendChild(bird);
+  document.getElementById('3GTZU3RrSlHhcocahnuken').appendChild(bird);
 
   // create credit link
   const credit = document.createElement('a');
@@ -51,7 +51,7 @@ if (document.getElementById('3GTZU3RrSlHhcocahnuken') === null) {
   credit.innerText = 'Dove icon by Icons8';
 
   // add credit to new div at top of body
-  document.body.childNodes[0].appendChild(credit);
+  document.getElementById('3GTZU3RrSlHhcocahnuken').appendChild(credit);
 
 } else {
 
