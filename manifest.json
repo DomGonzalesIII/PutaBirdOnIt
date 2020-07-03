@@ -1,6 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Put a Bird On It!",
+  "short_name": "PutABirdOnIt",
   "description": "What a sad little website; Put a Bird On It! Make it pretty.",
   "version": "1.0.0",
   "icons": {"128": "bigBird.png"},
